@@ -1,0 +1,207 @@
+.heading {
+  width: 80%;
+}
+.logo {
+  width: 100px;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #039be5;
+}
+
+.register_container {
+  width: 100%;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  background: #f8f9fb;
+  padding: 20px;
+  box-shadow: 5px 10px 38px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100% !important;
+}
+
+.admin_role {
+  width: 100%;
+  border: none;
+  background: #f8f9fb;
+  outline: none;
+}
+
+.wrapper2 {
+  width: 80%;
+  position: relative;
+  border-bottom: 2px solid #b2b2b2;
+  margin-bottom: 13px;
+}
+.wrapper1 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+}
+
+.f1 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #b2b2b2;
+}
+.f2 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #b2b2b2;
+  margin: 0;
+}
+
+.label {
+  font-size: 12px;
+  color: #676768;
+  line-height: 1.5 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  min-height: 25px;
+  border-bottom: none;
+  padding: 15px 0;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 2px;
+}
+.input {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  background: transparent;
+  color: #0f0f0f;
+  font-weight: 500;
+  padding: 10px 0px;
+}
+.admin_btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 40px;
+  outline: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  background: #327797;
+  color: #fff;
+  box-shadow: 8px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.admin_btn:hover {
+  background: #039be5;
+}
+
+.focus_input {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.focus_input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  /* bottom: -1px; */
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.6s ease-in-out;
+  background: #039be5;
+}
+
+.input:focus + .focus_input::before {
+  width: 100%;
+}
+
+.has-val.input .focus_input::before {
+  width: 100%;
+}
+
+.focus_input2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.focus_input2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.6s ease-in-out;
+  background: #039be5;
+}
+
+.input:focus + .focus_input2::before {
+  width: 100%;
+}
+
+.has-val.input .focus_input2::before {
+  width: 100%;
+}
+
+@media screen and (min-width: 48em) {
+  .register_container {
+    width: 90%;
+    height: 100% !important;
+    margin: 0 auto;
+  }
+
+  .f1 {
+    width: 40%;
+  }
+  .f2 {
+    width: 50%;
+    margin-left: auto;
+  }
+  .wrapper1 {
+    flex-direction: initial;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .register_container {
+    width: 80%;
+    height: 100% !important;
+  }
+  .form {
+    width: 70%;
+    height: 100% !important;
+  }
+  .church_container {
+    position: relative !important;
+    top: 50% !important;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .register_container {
+    width: 80%;
+    height: 100% !important;
+  }
+}
