@@ -1,4 +1,4 @@
-import CreateMember from "../../../components/member/member";
+import CreateMember from "../../../components/member/Member";
 
 const NewMember = () => {
   return (
