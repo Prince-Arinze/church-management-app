@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaBars, FaSearch, FaClock } from "react-icons/fa";
 
 import styles from "../../../styles/admin/Navbar.module.css";
@@ -24,7 +25,7 @@ const Navbar = ({ handleToggle }) => {
           <FaClock className={styles.icons} />
         </a>
         <a href="#">
-          <img src="/avatar" alt="avatar" width="30" />
+          <Image src="/avatar.svg" alt="avatar" width={30} height={30} />
         </a>
       </div>
     </nav>

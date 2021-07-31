@@ -7,14 +7,28 @@ import {
 } from "react-icons/fa";
 import styles from "../../../styles/admin/Main.module.css";
 import Chart from "../chart/Chart";
+import Image from "next/image";
 
 const Main = () => {
   return (
     <main className={styles.main}>
       <div className={styles.main__container}>
         <div className={styles.main__title}>
-          <img src="/passport.png" alt="welcome" />
-          <div className={styles.main__greetings}>
+          <div
+            style={{ borderRadius: "25px", width: "100px", height: "100px" }}
+          >
+            <Image
+              src="/passport.png"
+              alt="welcome"
+              layout="responsive"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div
+            className={styles.main__greetings}
+            style={{ marginLeft: "10px" }}
+          >
             <h1>Hello Cypher</h1>
             <p>Welcome to your admin dashboard</p>
           </div>

@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { FiActivity } from "react-icons/fi";
 import styles from "../../../styles/admin/Sidebar.module.css";
+import Image from "next/image";
 
 const Sidebar = ({ sidebarToggle, handleToggle }) => {
   return (
@@ -17,7 +18,7 @@ const Sidebar = ({ sidebarToggle, handleToggle }) => {
     >
       <div className={styles.sidebar__title}>
         <div className={styles.sidebar__img}>
-          <img src="/bible.svg" alt="Logo" />
+          <Image src="/bible.svg" alt="Logo" width={100} height={100} />
           <h1>Church app</h1>
         </div>
         <FaTimes id={styles.sidebar__icons} onClick={handleToggle} />
