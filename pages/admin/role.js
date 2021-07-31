@@ -1,4 +1,4 @@
-import Role from "../../components/Admin/Role";
+import Role from "../../components/admin/Role";
 
 const Roles = () => {
   return (

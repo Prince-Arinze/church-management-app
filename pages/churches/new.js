@@ -1,4 +1,4 @@
-import NewChurch from "../../components/Churches/Church";
+import NewChurch from "../../components/churches/Church";
 import styles from "../../styles/Home.module.css";
 
 const Church = () => {

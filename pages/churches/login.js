@@ -1,4 +1,4 @@
-import ChurchLogin from "../../components/Churches/Login";
+import ChurchLogin from "../../components/churches/Login";
 
 const Login = () => {
   return (

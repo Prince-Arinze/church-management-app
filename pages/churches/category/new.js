@@ -1,4 +1,4 @@
-import Category from "../../../components/Category/Category";
+import Category from "../../../components/category/Category";
 
 const Categorys = () => {
   return (

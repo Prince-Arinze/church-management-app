@@ -1,4 +1,4 @@
-import CreateOffice from "../../../components/Offices/CreateOffices";
+import CreateOffice from "../../../components/offices/CreateOffices";
 
 const Office = () => {
   return (
