@@ -136,7 +136,7 @@ const CreateMember = () => {
               {getCategory &&
                 getCategory.category?.map((category, index) => (
                   <>
-                    <option value={category._id} key={index + 10}>
+                    <option value={category._id} key={index}>
                       {category.name}
                     </option>
                   </>

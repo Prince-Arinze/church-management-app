@@ -43,7 +43,7 @@ const SignIn = () => {
   };
   return (
     <div>
-      <img src="/wave.png" className={styles.wave} />
+      <img src="/wave.png" className={styles.wave} alt="wave" />
       <div className={styles.container}>
         <div className={styles.img}>
           <div>
@@ -52,7 +52,7 @@ const SignIn = () => {
         </div>
         <div className={styles.login_container}>
           <form className={styles.form} onSubmit={handleSubmit}>
-            <img src="/avatar.svg" className={styles.avatar} />
+            <img src="/avatar.svg" className={styles.avatar} alt="welcome" />
             <h2>Welcome</h2>
             <div
               className={
