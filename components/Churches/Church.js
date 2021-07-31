@@ -49,7 +49,7 @@ const CreateChurch = () => {
 
   useEffect(() => {
     dispatch(listRoles());
-  }, [dispatch, listRoles]);
+  }, [dispatch]);
 
   return (
     <>

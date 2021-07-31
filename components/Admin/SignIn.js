@@ -43,16 +43,31 @@ const SignIn = () => {
   };
   return (
     <div>
-      <img src="/wave.png" className={styles.wave} alt="wave" />
+      <div className={styles.wave}>
+        <Image src="/wave.png" alt="wave" layout="fill" objectFit="cover" />
+      </div>
       <div className={styles.container}>
         <div className={styles.img}>
-          <div>
-            <img src="/bible.svg" alt="image" />
-          </div>
+          <Image
+            src="/bible.svg"
+            alt="image"
+            layout="intrinsic"
+            objectFit="contain"
+            width={100}
+            height={100}
+          />
         </div>
         <div className={styles.login_container}>
           <form className={styles.form} onSubmit={handleSubmit}>
-            <img src="/avatar.svg" className={styles.avatar} alt="welcome" />
+            <Image
+              src="/avatar.svg"
+              className={styles.avatar}
+              alt="welcome"
+              layout="intrinsic"
+              objectFit="contain"
+              width={100}
+              height={100}
+            />
             <h2>Welcome</h2>
             <div
               className={
